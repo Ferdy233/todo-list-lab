@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Dogbey Ferdinald">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todo.css">
+    <title>To-Do List</title>
+</head>
+<body>
+    <header> 
+        <h1>To-Do List <br></h1>
+    </header>
+    
+    <main class="container">
+        <section class="form-container">
+            <h2>Create a Task</h2>
+            <div class="input-field">
+                <label for="task">Task Title</label>
+                <input type="text" id="task" placeholder="Enter a task" required>
+            </div>
+            <div class="input-field">
+                <label for="description">Description</label>
+                <input type="text" id="description" placeholder="Enter description">
+            </div>
+            <div class="input-field">
+                <label for="datetime">Due Date and Time</label>
+                <input type="datetime-local" id="datetime">
+            </div>
+            <button id="addTaskButton" type="button">Add Task</button>
+        </section>
+
+        <section class="task-list-container">
+            <h2>Your Tasks</h2>
+            <ul id="todolist"></ul>
+        </section>
+    </main>
+    
+    <script src="todo.js"></script>
+</body>
+</html>
